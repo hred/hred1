@@ -1,0 +1,24 @@
+//les variables
+
+$paragraphe: blue;
+$width: 100%;
+$test: skyblue;
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+
+
+}
+
+p {
+	color: $paragraphe;
+	text-align: center;
+}
+.test {
+	width: $width;
+	height:$width;
+	background-color: $test;
+	@include border-radius(10px);
+}
